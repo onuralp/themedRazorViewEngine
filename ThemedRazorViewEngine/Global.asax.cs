@@ -16,13 +16,11 @@ namespace ThemedViewEngine
         {
             AreaRegistration.RegisterAllAreas();
 
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             RegisterViewEngine(ViewEngines.Engines);
         }
-
 
         public static void RegisterViewEngine(ViewEngineCollection viewEngines)
         {
